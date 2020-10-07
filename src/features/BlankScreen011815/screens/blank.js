@@ -18,7 +18,7 @@ export class _Blank extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return { headerLeft: <SlideMenuIcon navigationProps={navigation} /> }
   }
-  state = { TextInput_3: "", TextInput_5: "" }
+  state = { TextInput_3: "", TextInput_5: "", TextInput_7: "" }
   render = () => (
     <View style={styles.View_1}>
       <TextInput
@@ -35,6 +35,13 @@ export class _Blank extends React.Component {
         style={styles.TextInput_5}
         value={this.state.TextInput_5}
         onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
+      />
+      <TextInput
+        placeholder="Sample text input placeholder"
+        editable={true}
+        style={styles.TextInput_7}
+        value={this.state.TextInput_7}
+        onChangeText={nextValue => this.setState({ TextInput_7: nextValue })}
       />
     </View>
   )
